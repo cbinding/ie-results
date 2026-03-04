@@ -7,7 +7,7 @@ DEFAULT_SCORES: dict[str, float] = {
     "abstract": 2.0,            # score for terms apprearing in the abstract section
     "body": 0.1,                # score for terms apprearing in the body section
     "sig_proximity": 2.0,       # score for terms with significance proximity to the target term
-    "mrs": 1.0,                 # Minimum Relevance Score
+    "mrs": 0.0,                 # Minimum Relevance Score
     "mrc": 1.0                  # Minimum Relevance Count
 }
 
