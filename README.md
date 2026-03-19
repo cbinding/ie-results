@@ -4,12 +4,12 @@ Viewer for Information Extraction results on OASIS reports. This was developed a
 # Getting started
 To access the viewer, click the `launch binder` link (below). Note: Initially the build process may take a few minutes before the main interface is displayed, however subsequent usage should be quicker. 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cbinding/ie-results/HEAD?urlpath=%2Fdoc%2Ftree%2Fie-results-viewer.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cbinding/ie-results/HEAD?urlpath=%2Fdoc%2Ftree%2Fie_results_viewer.ipynb)
 
 Once built and opened, select `Run` > `Run all cells` from the main menu to run the code to set up the viewer. The user interface should now be displayed towards the bottom of the page (you may need to scroll down to see it): 
 
 <figure>
-    <img src="img/ie-results-viewer-ui.png"
+    <img src="img/ie_results_viewer_ui.png"
         alt="IE Results Viewer" width=500px>
     <figcaption>Information Extraction results viewer</figcaption>
 </figure>
