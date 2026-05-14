@@ -1,4 +1,5 @@
 import pandas as pd  # for DataFrame
+import json
 from html import escape # to esscape values for HTML display
 
 # default initial values for sliders (used for reset button and as fallback if sliders are not set)
@@ -12,13 +13,12 @@ DEFAULT_SCORES: dict[str, float] = {
 }
 
 
-def get_input_data(filepath_or_buffer) -> list[dict]:
+def get_input_data(filepath_or_buffer) -> list[dict]:    
     df = pd.read_csv(filepath_or_buffer, delimiter=",", encoding="utf-8", skip_blank_lines=True)
     # set any NaN values to blank string
     df.fillna("", inplace=True)
     # returning data as list[dict]
     return df.to_dict(orient='records')
-
 
 # get maximum section score from a list of sections
 # (e.g. concept may be within "abstract", "page" AND "body" sections)
